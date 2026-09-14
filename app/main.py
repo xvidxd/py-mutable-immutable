@@ -20,10 +20,10 @@ sorted_variables = {
     "mutable": [],
     "immutable": []
 }
-all_vars = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins, sorted_variables]
+all_vars = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
 
-for var in all_vars:
-    if isinstance(var, (list, dict, set)):
-        sorted_variables["mutable"].append(var)
+for item in all_vars:
+    if isinstance(item, (list, dict, set)):
+        sorted_variables["mutable"].append(item)
     else:
-        sorted_variables["immutable"].append(var)
+        sorted_variables["immutable"].append(item)
